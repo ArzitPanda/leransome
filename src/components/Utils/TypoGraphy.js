@@ -31,7 +31,7 @@ function TypoGraphy() {
     return (
         <div className='flex flex-col items-center justify-center gap-2S headings mt-5' id='headings' ref={divref}>
          
-           <motion.h1  ref={scope1} className='text-[190px]  text-white font-semibold '  
+           <motion.h1  ref={scope1} className='text-[150px]  text-white font-semibold '  
            animate={{x:(800-coords.x)/6}}
            onMouseLeave={()=>{
 
@@ -43,7 +43,7 @@ function TypoGraphy() {
            <motion.h1
         
            animate={{x:-(800-coords.x)/6}}
-           className='text-[190px]  leading-9 text-white font-semibold '>BUISNESS COULD BE</motion.h1>
+           className='text-[150px]  leading-9 text-white font-semibold '>BUISNESS COULD BE</motion.h1>
 
            <div className='text-white text-5xl font-semibold mt-36 flex flex-row  items-center justify-center gap-4'>
             Let there be change
