@@ -13,9 +13,13 @@ const LogoRevealer = () => {
 
   const logoTransition = () => {
     if (!reveal) {
-      animateLogo(scope2.current, { x: 30 });
-      // animateText(scope1.current,{opacity:1,y:-30})
-    } else animateLogo(scope2.current, { x: -30 });
+      animateLogo(scope2.current, { x: 30, transition: { duration: 10, type: 'tween', ease: 'anticipate' } });
+      animateText(scope1.current,{opacity:1,height:'80px',y:0})
+      // animateText(scope1.current, { opacity: 1, y: -30, transition: { duration: 2, type: 'tween', ease: 'anticipate' } });
+    } else {
+      animateLogo(scope2.current, { x: -30, transition: { duration: 10, type: 'tween', ease: 'anticipate' } });
+      animateText(scope1.current,{opacity:0,height:'0px',y:30})
+    }
     // animateText(scope1.current,{opacity:0,y:30})
 
     setReaveal(!reveal);  
@@ -31,8 +35,8 @@ const LogoRevealer = () => {
       />
       <motion.h1
         className={reveal ? "text-white text-6xl " : `hidden`}
-        initial={{ opacity: 0, y: 1 }}
-        animate={{opacity:1}}
+        initial={{ opacity: 0, y: -30 ,height:'0px'}}
+        // animate={{opacity:1}}
         ref={scope1}
       >
         accenture

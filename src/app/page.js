@@ -27,7 +27,7 @@ export default function Home() {
         <ValueTypo/>
         <div className='h-6'></div>
         <ImageSliderLayout/>
-        <div className='h-6'></div>
+        <div className='h-96'></div>
         <ScrollOver/>
         <div className='h-96'></div>
         <ImageShrinker/>

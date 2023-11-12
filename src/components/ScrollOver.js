@@ -20,7 +20,7 @@ const ScrollOver = () => {
 
   return (
     <div className=" relative w-screen flex items-center justify-center " style={{y:scrollY}} ref={ref}>
-     <motion.h1 className='text-[150px]  absolute top-[500px] -z-0 text-white  text-center capitalize font-semibold' style={{y:scrollY}} > 
+     <motion.h1 className='text-[150px]  absolute top-[70px] -z-0 text-white  text-center capitalize font-semibold' style={{y:scrollY}} > 
      Global recognition and <br/> awards
      
      </motion.h1>
@@ -43,7 +43,7 @@ const ScrollOver = () => {
 
 
        </div>
-       <div className='h-[200px]'></div>
+       <div className='h-[500px]'></div>
        <div className='w-[800px] h-[500px] bg-red-500 mt-20 ml-[1700px] overflow-y-scroll cardLayout'>
             <motion.div className='w-full' whileHover={{y:-700, transition: { type: "spring", stiffness: 50 }}}>
                 <div className='h-[300px]'></div>
